@@ -1,0 +1,11 @@
+{
+  "db": {
+    "source": "mongodb://127.0.0.1:27017/api",
+    "debug": true
+  },
+  "app": {
+    "name": "MessageServer"
+  },
+  "port": 5000,
+  "secret": "GuildEducationSecret"
+}

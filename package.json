@@ -1,0 +1,107 @@
+{
+  "name": "MessageServer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "watch": "webpack --watch",
+    "dev": "webpack-dev-server --env.dev",
+    "build": "webpack --config webpack.server.config",
+    "build:server": "BABEL_ENV=production webpack --config=config/webpack.server.js --env.NODE_ENV=production",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=dev nodemon server.js --exec babel-node"
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "env": {
+      "es6": true,
+      "browser": true
+    },
+    "rules": {
+      "brace-style": [
+        "error",
+        "stroustrup"
+      ],
+      "comma-dangle": "off",
+      "no-unused-vars": "warn",
+      "no-var": "off",
+      "one-var": "off",
+      "no-console": "off",
+      "react/jsx-filename-extension": "off"
+    }
+  },
+  "dependencies": {
+    "@babel/polyfill": "7.2.5",
+    "@babel/runtime": "7.3.4",
+    "bcrypt": "3.0.4",
+    "cookie-parser": "1.4.4",
+    "express": "4.16.4",
+    "express-session": "1.15.6",
+    "graphql": "14.1.1",
+    "mongoose": "5.4.15",
+    "morgan": "1.9.1",
+    "passport": "0.4.0",
+    "passport-auth0": "1.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.2.3",
+    "@babel/core": "7.3.4",
+    "@babel/node": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-decorators": "^7.0.0",
+    "@babel/plugin-proposal-do-expressions": "^7.0.0",
+    "@babel/plugin-proposal-export-default-from": "^7.0.0",
+    "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
+    "@babel/plugin-proposal-function-bind": "^7.0.0",
+    "@babel/plugin-proposal-function-sent": "^7.0.0",
+    "@babel/plugin-proposal-json-strings": "^7.0.0",
+    "@babel/plugin-proposal-logical-assignment-operators": "^7.0.0",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.0.0",
+    "@babel/plugin-proposal-numeric-separator": "^7.0.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.0.0",
+    "@babel/plugin-proposal-pipeline-operator": "^7.0.0",
+    "@babel/plugin-proposal-throw-expressions": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "7.2.0",
+    "@babel/plugin-syntax-import-meta": "^7.0.0",
+    "@babel/plugin-transform-runtime": "7.3.4",
+    "@babel/preset-env": "7.3.4",
+    "@babel/preset-es2015": "7.0.0-beta.53",
+    "@babel/preset-react": "7.0.0",
+    "@babel/preset-react-hmre": "1.1.1",
+    "@babel/preset-stage-0": "7.0.0",
+    "babel-loader": "8.0.5",
+    "babel-plugin-transform-runtime": "6.23.0",
+    "babel-polyfill": "6.26.0",
+    "babel-preset-react-hmre": "1.1.1",
+    "core-js": "2.6.5",
+    "cors": "2.8.5",
+    "dotenv": "7.0.0",
+    "eslint": "5.15.1",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-plugin-import": "2.16.0",
+    "express-graphql": "0.7.1",
+    "extract-text-webpack-plugin": "3.0.2",
+    "friendly-errors-webpack-plugin": "1.7.0",
+    "install": "0.12.2",
+    "lodash": "4.17.11",
+    "nodemon": "1.18.10",
+    "npm": "6.9.0",
+    "react-hot-loader": "4.8.0",
+    "rimraf": "2.6.3",
+    "webpack": "4.29.6",
+    "webpack-dev-middleware": "3.6.1",
+    "webpack-dev-server": "3.2.1",
+    "webpack-livereload-plugin": "2.2.0",
+    "webpack-node-externals": "1.7.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rtmyers/MessageApp.git"
+  },
+  "author": "RT Myers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rtmyers/MessageApp/issues"
+  },
+  "homepage": "https://github.com/rtmyers/MessageApp#readme"
+}
